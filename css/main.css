@@ -4636,7 +4636,7 @@ ul, li {
   -moz-column-gap: 40px;
   column-gap: 40px; }
   .header-collections-list li {
-    margin-bottom: 11px;
+    padding-bottom: 11px;
     list-style-type: none;
     position: relative; }
     .header-collections-list li a {
