@@ -113,7 +113,7 @@ $(function() {
 			var _self = this,
 					$collectionsMenu = $('.header-cat-menu[data-menu="collections"]'),
 					$categoriesMenu = $('.header-cat-menu[data-menu="categories"]'),
-					$mainMenuItems = $('.header-menu li'),
+					$mainMenuItems = $('.header-menu .header-menu__item'),
 					$header = $('.header'),
 					$bodyCover = $('.body-cover'),
 					scrollPane,
