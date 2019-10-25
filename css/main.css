@@ -7081,7 +7081,19 @@ li {
 
 .material-select__item span {
   margin-right: 15px;
+  position: relative;
   text-transform: uppercase;
+}
+
+.material-select__item span:after {
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #A1A1A1;
 }
 
 .material-select__item:last-child {
@@ -7090,6 +7102,10 @@ li {
 
 .material-select__item.active {
   z-index: 101;
+}
+
+.material-select__item.active span:after {
+  display: block;
 }
 
 .material-select__icon {
@@ -8513,6 +8529,10 @@ li {
     margin-right: 10px;
     width: -webkit-calc(33.3333% - 10px);
     width: calc(33.3333% - 10px);
+  }
+
+  .material-select__item.active span:after {
+    display: none;
   }
 
   .material-select__item.active .material-select__close {
