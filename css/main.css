@@ -8943,6 +8943,10 @@ li {
     margin-left: 10px;
   }
 
+  .cart-preview__recomendations .cart-preview__item {
+    width: 270px;
+  }
+
   .cart-preview-inner {
     max-width: 260px;
     padding-left: 15px;
