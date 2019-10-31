@@ -5736,7 +5736,6 @@ li {
   position: fixed;
   z-index: 99;
   display: none;
-  background-color: #fff;
 }
 
 .header.banner--stick {
@@ -5756,6 +5755,10 @@ li {
 .header.banner--stick .header-menu,
 .header.banner--stick .header-tel {
   display: none;
+}
+
+.header.banner--stick.fixed-menu-opened {
+  background-color: #fff;
 }
 
 .header.banner--stick.fixed-menu-opened .header-logo,
@@ -8386,6 +8389,11 @@ li {
   .banner-slide__title {
     font-size: 5.625rem;
     line-height: 5.375rem;
+  }
+
+  .header {
+    padding-bottom: 12px;
+    background-color: #fff;
   }
 }
 
