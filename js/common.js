@@ -266,6 +266,7 @@ $(function() {
 		slideout
 		.on('beforeopen', function() {
 			this.panel.classList.add('panel-open');
+			$('html').addClass('fixed-header-to-backward');
 		})
 		.on('open', function() {
 			this.panel.addEventListener('click', close);
@@ -273,6 +274,7 @@ $(function() {
 		.on('beforeclose', function() {
 			this.panel.classList.remove('panel-open');
 			this.panel.removeEventListener('click', close);
+			$('html').removeClass('fixed-header-to-backward');
 		});
 	// end slideout
 
